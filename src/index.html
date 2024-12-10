@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片压缩工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>图片压缩工具</h1>
+        <p class="description">请上传您要压缩的图片，并输入缩放比例（百分比）。</p>
+        <input type="file" id="fileInput" accept="image/png, image/jpeg">
+        <label for="scalePercentage">输入缩放比例 (百分比，例如: 50):</label>
+        <input type="number" id="scalePercentage" min="1" max="100" placeholder="例如: 50">
+        <button id="compressButton">压缩图片</button>
+        
+        <!-- 预览区域 -->
+        <div id="preview" class="preview-container" style="display: none;"></div>
+        
+        <div id="fileSizes"></div>
+        <a id="downloadLink" style="display:none;">下载压缩后的图片</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
